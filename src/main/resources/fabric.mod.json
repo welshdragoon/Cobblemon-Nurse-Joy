@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemon-nurse-joy",
+	"version": "${version}",
+	"name": "Cobblemon Nurse Joy",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cobblemon-nurse-joy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"welsh.cobblemonnursejoy.CobblemonNurseJoy"
+		],
+		"client": [
+			"welsh.cobblemonnursejoy.CobblemonNurseJoyClient"
+		],
+		"fabric-datagen": [
+			"welsh.cobblemonnursejoy.CobblemonNurseJoyDataGenerator"
+		],
+		"datagen": [
+			"welsh.cobblemonnursejoy.CobblemonNurseJoyDataGenerator"
+		]
+	},
+	"mixins": [
+		"cobblemon-nurse-joy.mixins.json",
+		{
+			"config": "cobblemon-nurse-joy.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

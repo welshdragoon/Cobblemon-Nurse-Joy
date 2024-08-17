@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cobblemon-nurse-joy:healpoi",
+      "required": false
+    }
+  ]
+}
